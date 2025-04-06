@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Image Replacer - Options</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 500px; }
+    label { display: block; margin-top: 15px; }
+    input { width: 100%; padding: 8px; margin-top: 5px; }
+    button { margin-top: 20px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h2>Extension Settings</h2>
+  
+  <label>
+    Unsplash Access Key:
+    <input type="text" id="accessKey" placeholder="Your Unsplash Access Key">
+    <small>
+      <a href="https://unsplash.com/documentation#creating-a-developer-account">Creating a developer account</a>, <a href="https://unsplash.com/documentation#registering-your-application">Registering your application</a> and set Access Key
+    </small>
+  </label>
+
+  <label>
+    Search Query:
+    <input type="text" id="query" placeholder="e.g. office, team, technology">
+  </label>
+
+  <label>
+    Collections (optional, comma-separated):
+    <input type="text" id="collections" placeholder="e.g. 123abc,456def">
+  </label>
+
+  <label>
+    Topics (optional, comma-separated):
+    <input type="text" id="topics" placeholder="e.g. technology,nature">
+  </label>
+
+  <label>
+    Username (optional):
+    <input type="text" id="username" placeholder="e.g. johndoe">
+  </label>
+
+  <button id="save">Save</button>
+
+  <p id="status"></p>
+
+  <script src="options.js"></script>
+</body>
+</html>
